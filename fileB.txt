@@ -1,1 +1,2 @@
 This is file B
+changes after git hub added 
