@@ -1,2 +1,3 @@
-This is file A
-file A modified 
+ this is fileA
+ modified
+ 3 time modified  
