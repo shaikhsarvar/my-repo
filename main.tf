@@ -28,19 +28,19 @@ module "applicationgateway" {
 # SITE-TO-SITE VPN GATEWAY
 # =========================
 
-#module "vpngateway" {
-# source = "./modules/vpngateway"
+ module "vpngateway" {
+ source = "./modules/vpngateway"
 
-# resource_group_name = azurerm_resource_group.rg.name
-#location            = azurerm_resource_group.rg.location
+ resource_group_name = azurerm_resource_group.rg.name
+ location            = azurerm_resource_group.rg.location
 
-#gateway_subnet_id = azurerm_subnet.gateway.id
+ gateway_subnet_id = azurerm_subnet.gateway.id
 
-#public_ip_name   = "pip-vpn-gateway"
-#vpn_gateway_name = "vpn-gateway-prod"
+ public_ip_name   = "pip-vpn-gateway"
+ vpn_gateway_name = "vpn-gateway-prod"
 
-# vpn_shared_key = var.vpn_shared_key
-#}
+ vpn_shared_key = var.vpn_shared_key
+ }
 
 # =========================
 
